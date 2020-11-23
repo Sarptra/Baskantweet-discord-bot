@@ -1,0 +1,65 @@
+{
+  "name": "baskantweet",
+  "temp": "memberjoin",
+  "event-type": "6",
+  "_id": "NaBZU",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "anan",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Eg.** !baskantweet cCc!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "url": "https://cdn.discordapp.com/attachments/463277531710226433/779642586410647562/unknown.png",
+      "storage": "1",
+      "varName": "background",
+      "name": "Create Image"
+    },
+    {
+      "storage": "1",
+      "varName": "background",
+      "x": "15",
+      "y": "60",
+      "font": "fonts/ME.fnt",
+      "width": "",
+      "text": "${tempVars(\"anan\")}",
+      "name": "Draw Text on Image"
+    },
+    {
+      "storage": "1",
+      "varName": "background",
+      "channel": "0",
+      "varName2": "channel",
+      "message": "",
+      "storage2": "0",
+      "varName3": "",
+      "name": "Send Image"
+    }
+  ],
+  "restriction": "1",
+  "permissions": "NONE",
+  "comType": "0"
+}
